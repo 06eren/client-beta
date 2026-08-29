@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sağlıklı Yaşam Alışkanlıkları</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  :root {
+    --bg: #0f1e17;
+    --card-bg: #16281f;
+    --accent: #4ade80;
+    --accent-soft: #1f3a2b;
+    --text: #eef7f1;
+    --muted: #9db3a6;
+    --border: #24402f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: radial-gradient(circle at top, #14261c, #0f1e17 60%);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 48px 20px;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 52px;
+  }
+  header .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-size: 2.3rem;
+    margin: 0 0 10px;
+    letter-spacing: -0.5px;
+  }
+  header p {
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 26px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.18s ease, border-color 0.18s ease;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+  }
+  .card .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+  }
+  .card h2 {
+    font-size: 1.15rem;
+    margin: 0 0 8px;
+  }
+  .card p {
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin: 0;
+  }
+  .stat-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 44px 0;
+    flex-wrap: wrap;
+  }
+  .stat {
+    text-align: center;
+  }
+  .stat .num {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .stat .label {
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer i { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge"><i class="fa-solid fa-leaf"></i> Günlük Rutin</span>
+      <h1>Sağlıklı Yaşam Alışkanlıkları</h1>
+      <p>Küçük ama tutarlı adımlarla daha enerjik ve dengeli bir yaşama giden yol.</p>
+    </header>
+
+    <div class="stat-row">
+      <div class="stat">
+        <div class="num">8h</div>
+        <div class="label">Uyku</div>
+      </div>
+      <div class="stat">
+        <div class="num">2L</div>
+        <div class="label">Su</div>
+      </div>
+      <div class="stat">
+        <div class="num">30dk</div>
+        <div class="label">Hareket</div>
+      </div>
+      <div class="stat">
+        <div class="num">10dk</div>
+        <div class="label">Nefes/Meditasyon</div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-bed"></i></div>
+        <h2>Düzenli Uyku</h2>
+        <p>Her gece aynı saatte yatıp kalkmak, vücudun biyolojik saatini dengeler ve enerji seviyesini artırır.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-droplet"></i></div>
+        <h2>Bol Su İçmek</h2>
+        <p>Gün boyunca yeterli su tüketimi, metabolizmayı destekler ve konsantrasyonu artırır.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-person-running"></i></div>
+        <h2>Düzenli Hareket</h2>
+        <p>Günde en az 30 dakikalık yürüyüş veya egzersiz, kalp sağlığı ve ruh hali üzerinde olumlu etki yaratır.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-apple-whole"></i></div>
+        <h2>Dengeli Beslenme</h2>
+        <p>Sebze, meyve ve tam tahıllar açısından zengin bir beslenme düzeni, bağışıklığı güçlendirir.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-spa"></i></div>
+        <h2>Nefes ve Farkındalık</h2>
+        <p>Kısa nefes egzersizleri ve meditasyon, stresi azaltıp zihinsel netliği artırır.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-book-open"></i></div>
+        <h2>Ekran Molaları</h2>
+        <p>Düzenli aralarla ekrandan uzaklaşmak, göz yorgunluğunu azaltır ve odaklanmayı kolaylaştırır.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+        <h2>Sosyal Bağlar</h2>
+        <p>Sevdiklerinizle vakit geçirmek, ruh sağlığını destekleyen en güçlü alışkanlıklardan biridir.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fa-solid fa-sun"></i></div>
+        <h2>Gün Işığı</h2>
+        <p>Sabah güneş ışığı almak, uyku düzenini ve D vitamini seviyesini olumlu etkiler.</p>
+      </div>
+    </div>
+
+    <footer>
+      <i class="fa-solid fa-heart-pulse"></i> Küçük alışkanlıklar, büyük değişimler yaratır.
+    </footer>
+  </div>
+</body>
+</html>
